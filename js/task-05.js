@@ -1,12 +1,11 @@
-let country = prompt('країна доставки');
+const country = prompt('країна доставки');
 let price;
-let countryNotInList;
+let message;
 
-const caseCountry = country.toLowerCase();
 
-switch (caseCountry) {
+switch (country.toLowerCase()) {
   case 'китай':
-    price = 100;
+    price = 150;
     break;
 
   case 'чілі':
@@ -14,7 +13,7 @@ switch (caseCountry) {
     break;
 
   case 'австралія':
-    price = 170;
+    price = 270;
     break;
 
   case 'індія':
@@ -24,12 +23,15 @@ switch (caseCountry) {
   case 'ямайка':
     price = 120;
     break;
-
-  default:
-    countryNotInList = true;
-    alert('доставка не доступна');
-    break;
+    
+    
+    
+    default: message = 'доставка не доступна';
+        
 }
 
-countryNotInList === true
-  alert(`доставка в ${caseCountry} коштує ${price} кредитів`);
+if (price !== undefined) {
+  message = 'доставка в ${сountry} коштує ${price} кредитів';
+}
+
+alert(message);
