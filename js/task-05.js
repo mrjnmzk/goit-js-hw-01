@@ -27,8 +27,9 @@ switch (caseCountry) {
 
   default:
     countryNotInList = true;
+    alert('доставка не доступна');
+    break;
 }
 
 countryNotInList === true
-  ? alert('доставка не доступна')
-  : alert(`доставка в ${caseCountry} коштує ${price} кредитів`);
+  alert(`доставка в ${caseCountry} коштує ${price} кредитів`);

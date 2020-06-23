@@ -1,12 +1,19 @@
 const ADMIN_PASSWORD = 'jqueryismyjam';
 let message;
 
-const input = prompt('пароль');
+message = prompt('пароль');
 
-input
-  ? input === ADMIN_PASSWORD
-    ? (message = 'вхід дозволено')
-    : (message = 'невірний пароль!')
-  : (message = 'скасовано користувачем!');
+if (message === null) {
+    message = 'скасовано користувачем';
+   
+} else if (message === ADMIN_PASSWORD) {
+    message = 'вхід дозволено';
+ } else {
+     message = 'вхід дозволено';
+ }
+
+
+
+
 
 alert(message);
