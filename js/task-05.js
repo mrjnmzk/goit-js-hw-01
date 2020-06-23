@@ -9,7 +9,7 @@ switch (caseCountry) {
     price = 100;
     break;
 
-  case 'чіли':
+  case 'чілі':
     price = 250;
     break;
 
